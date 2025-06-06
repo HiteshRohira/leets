@@ -8,7 +8,6 @@
 var twoSum = function (numbers, target) {
   let f = 0;
   let l = numbers.length - 1;
-  // sum = 0;
   while (f <= l) {
     if (numbers[f] + numbers[l] === target) return [f + 1, l + 1];
     else if (numbers[f] + numbers[l] > target) l--;
